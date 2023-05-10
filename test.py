@@ -1,23 +1,21 @@
+# print(map(str, [[96], [69]]))
+# print(list(map(str, [[96], [69]])))
+# print(''.join(list(map(str, [[96], [69]]))))
+
+numbers = [15, 30, 47, 82, 95]
 
 
-def read_even_numbered_lines(file_name):
-    """ Reads in the even numbered lines of a file
+def lesser(numbers):
+    return numbers < 50
 
-    [IMPLEMENT ME]
-        1. Open and read the given file into a variable
-        2. Read the file line-by-line and add the even-numbered lines to a list
-        3. Return the list
 
-    Args:
-        file_name: the name of the file to be read
+small = list(filter(lesser, numbers))
+print(small)
 
-    Returns:
-        list: a list of the even-numbered lines of the file
-    """
-    # WRITE SOLUTION HERE
-    list = []
-    with open(file_name) as f:
-        for index, line in f:
-            if index % 2 == 0:
-                list.append(line)
-    return list
+
+class MyFirstClass:
+    print("who wrote this?")
+    index = "Author-Book"
+    def handle_list(self,philosopher,book):
+        
+        
